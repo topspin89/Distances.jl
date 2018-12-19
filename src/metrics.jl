@@ -325,7 +325,7 @@ function eval_end(dist::RenyiDivergence, s::Tuple{T,T,T,T}) where {T <: Real}
 end
 
 # Combine docs with RenyiDivergence
-@doc (@doc RenyiDivergence) renyi_divergence
+#@doc (@doc RenyiDivergence) renyi_divergence
 
 renyi_divergence(a::AbstractArray, b::AbstractArray, q::Real) = evaluate(RenyiDivergence(q), a, b)
 
